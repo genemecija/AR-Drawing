@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AR_Drawing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DdN-7e-eWt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHc-lZ-at6">
+                                <rect key="frame" x="155" y="602" width="65" height="45"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="Gik-JA-8aP"/>
+                                    <constraint firstAttribute="height" constant="45" id="OFK-ME-Al2"/>
+                                </constraints>
+                                <state key="normal" title="Draw"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVQ-pm-RIL">
+                                <rect key="frame" x="45" y="617" width="47" height="30"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jxi-9c-giv"/>
+                                    <constraint firstAttribute="width" constant="47" id="rxs-3n-Xcf"/>
+                                </constraints>
+                                <state key="normal" title="Red"/>
+                                <connections>
+                                    <action selector="redButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AOY-L1-B1Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-ED-ocQ">
+                                <rect key="frame" x="45" y="571" width="47" height="30"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="GO7-xB-rWf"/>
+                                    <constraint firstAttribute="height" constant="30" id="XTr-7R-8sd"/>
+                                </constraints>
+                                <state key="normal" title="Blue"/>
+                                <connections>
+                                    <action selector="blueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QDi-Qi-nTg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COw-wd-O4r">
+                                <rect key="frame" x="278" y="617" width="39" height="30"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="LV3-OV-N1y"/>
+                                    <constraint firstAttribute="height" constant="30" id="YdV-0B-tCc"/>
+                                </constraints>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DAi-7N-zyS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DdN-7e-eWt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6GZ-G8-P99"/>
+                            <constraint firstItem="uHc-lZ-at6" firstAttribute="leading" secondItem="kVQ-pm-RIL" secondAttribute="trailing" constant="63" id="6vS-fB-KSO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="COw-wd-O4r" secondAttribute="bottom" constant="20" id="Euq-x6-uor"/>
+                            <constraint firstItem="DdN-7e-eWt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FcU-qH-1HA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uHc-lZ-at6" secondAttribute="bottom" constant="20" id="LWG-dR-8YR"/>
+                            <constraint firstItem="DdN-7e-eWt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="M4g-WO-hDu"/>
+                            <constraint firstItem="cdv-ED-ocQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="UBR-o6-qV7"/>
+                            <constraint firstItem="DdN-7e-eWt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X8R-Uk-rt4"/>
+                            <constraint firstItem="kVQ-pm-RIL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="Xn1-AN-14a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="COw-wd-O4r" secondAttribute="trailing" constant="58" id="dwM-lv-WXa"/>
+                            <constraint firstItem="kVQ-pm-RIL" firstAttribute="top" secondItem="cdv-ED-ocQ" secondAttribute="bottom" constant="16" id="iuF-KK-5z5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kVQ-pm-RIL" secondAttribute="bottom" constant="20" id="vak-FD-RWG"/>
+                            <constraint firstItem="uHc-lZ-at6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zDO-mP-vfK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="drawButton" destination="uHc-lZ-at6" id="MDX-aj-iaN"/>
+                        <outlet property="sceneView" destination="DdN-7e-eWt" id="T8s-WX-bxw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
